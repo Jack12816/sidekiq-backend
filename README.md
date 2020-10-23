@@ -127,7 +127,6 @@ class Base64Interchanger < ::Karafka::Interchanger
     Marshal.load(Base64.decode64(super))
   end
 end
-
 ```
 
 **Warning**: if you decide to use slow interchangers, they might significantly slow down Karafka.
